@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Modele premiere partie">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" afterDir="false" />
+    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Modif Visionne et ajout jdbc">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modele/Liste_client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Modele/Liste_clientDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/Visionne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/Visionne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +43,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Abdallah/Desktop/ING3/Deuxième semestre/Java/TP/TP4/projetNetflix/src/main/java/Modele",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Abdallah/Desktop/ING3/Deuxième semestre/Java/TP/TP4/projetNetflix/src/main/java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java\Modele" />
     </key>
   </component>
@@ -78,11 +82,30 @@
       <option name="project" value="LOCAL" />
       <updated>1680507834069</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modif Visionne et ajout jdbc">
+      <created>1680510209187</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680510209187</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modele premiere partie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modele premiere partie" />
+    <MESSAGE value="Modif Visionne et ajout jdbc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modif Visionne et ajout jdbc" />
   </component>
 </project>

@@ -34,7 +34,7 @@ public class VisionneDao extends MethodDao<Visionne>{
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
                     "UPDATE visionne SET id_video = ?, id_client = ?, date_v = ?, Pause = ?, Note = ?, Vue = ?" +
-                            "WHERE id_video = ? AND id_client");
+                            "WHERE id_video = ? AND id_client = ?");
             preparedStatement.setLong(1, obj.getId_video());
             preparedStatement.setLong(2, obj.getId_client());
             preparedStatement.setString(3, obj.getDate_v());

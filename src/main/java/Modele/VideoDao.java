@@ -97,4 +97,18 @@ public class VideoDao extends MethodDao<Video>{
         }
         return videoList;
     }
+    public void appartient(Video obj1, Categorie obj2){
+        try{
+            PreparedStatement preparedStatement=this.connection.prepareStatement(
+                    "INSERT INTO appartient (id_cat, id_video) " +
+                            "VALUES(?, ?)");
+            preparedStatement.setLong(1, obj2.getId_cat());
+            preparedStatement.setLong(2, obj1.getId_video());
+
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }

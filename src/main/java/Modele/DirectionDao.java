@@ -3,6 +3,7 @@ package Modele;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,5 +76,21 @@ public class DirectionDao extends MethodDao<Direction>{
             e.printStackTrace();
         }
         return directionList;
+    }
+
+    public void maj(Direction obj1, Video obj2){
+        try{
+            PreparedStatement preparedStatement=this.connection.prepareStatement(
+                    "INSERT INTO met_a_jour (id_admin, id_video, last_modif) " +
+                    "VALUES(?, ?, ?)");
+            preparedStatement.setLong(1, obj1.getId_admin());
+            preparedStatement.setLong(2, obj2.getId_video());
+            //preparedStatement.setString(3, LocalDate.now());//
+
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 }
