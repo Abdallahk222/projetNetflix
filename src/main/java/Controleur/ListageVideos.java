@@ -8,9 +8,9 @@ public class ListageVideos {
 
 
     public ListageVideos(){
-        VideoDao video = new VideoDao();
+        VideoDao videodao = new VideoDao();
         List<Video> ListVideos = new ArrayList<>();
-        ListVideos = VideoDao.lister();
+        ListVideos = videodao.lister();
 
 
     }
