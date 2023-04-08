@@ -27,7 +27,7 @@ public class DAO {
                 return connection;
             }
 
-            return null;
+            return connection;
         }
 
 }

@@ -4,6 +4,16 @@ public class Video {
     private long id_video=0;
     private String titre;
     private String lien;
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    private String img;
     private String resume;
     private String teaser;
     private String duree;
