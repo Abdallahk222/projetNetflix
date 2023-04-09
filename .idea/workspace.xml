@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Dernier DAO">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Historique.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Historique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/VisionneRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/VideoRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/VideoRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,26 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/talbi/IdeaProjects/projetNetflix/target/classes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/talbi/IdeaProjects/projetNetflix/target/classes&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\target\classes" />
@@ -96,6 +96,7 @@
       <workItem from="1680978259049" duration="1103000" />
       <workItem from="1680998662796" duration="1574000" />
       <workItem from="1681042235668" duration="7220000" />
+      <workItem from="1681051057780" duration="3791000" />
     </task>
     <task id="LOCAL-00001" summary="Modele premiere partie">
       <created>1680507539688</created>

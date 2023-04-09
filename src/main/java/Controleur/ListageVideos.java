@@ -27,4 +27,12 @@ public class ListageVideos {
 
         return list_cat;
     }
+
+    public List<Visionne> historique (long id_client){
+
+        VisionneDao v = new VisionneDao();
+       List<Visionne> list = v.listh(id_client);
+       return list;
+    }
+
 }

@@ -89,4 +89,27 @@ public class VisionneDao extends MethodDao<Visionne>{
         }
         return visionneList;
     }
+
+    public List<Visionne> listh(long id_client){
+        List<Visionne> visionneList=new ArrayList<>();
+        try {
+            ResultSet resultSet=this.connection.createStatement().executeQuery("SELECT id_video, id_client, date_v, Pause, Note, Vue FROM visionne ORDER BY date_v DESC SC WHERE id_client ="+id_client+";");
+
+            while(resultSet.next()){
+                Visionne visionne=new Visionne();
+                visionne.setId_video(resultSet.getLong("id_video"));
+                visionne.setId_client(resultSet.getLong("id_client"));
+                visionne.setDate_v(resultSet.getString("date_v"));
+                visionne.setPause(resultSet.getString("Pause"));
+                visionne.setNote(resultSet.getInt("Note"));
+                visionne.setVue(resultSet.getInt("Vue"));
+
+                visionneList.add(visionne);
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        return visionneList;
+    }
 }
