@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Vue.Page_video">
+  <grid id="27dc6" binding="Page_video" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <scrollpane id="31de8">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="5bffa" binding="Page_video2" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-13487564"/>
+              <enabled value="false"/>
+              <foreground color="-1049345"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="a7722" class="javax.swing.JLabel" binding="titrevideo">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="36" style="1"/>
+                  <foreground color="-1049345"/>
+                  <text value="Titre de la vidéo"/>
+                </properties>
+              </component>
+              <component id="75180" class="javax.swing.JLabel" binding="Image">
+                <constraints>
+                  <grid row="3" column="3" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="ff7d1" class="javax.swing.JLabel" binding="Duree">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="a4d9e" class="javax.swing.JLabel" binding="Annee">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="d6347" class="javax.swing.JLabel" binding="Acteur">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="1be79" class="javax.swing.JLabel" binding="Realisateur">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="19189" class="javax.swing.JButton" binding="Teaser">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12517360"/>
+                  <foreground color="-1049345"/>
+                  <text value="Teaser"/>
+                </properties>
+              </component>
+              <component id="dc9cb" class="javax.swing.JButton" binding="Regarder">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12517360"/>
+                  <foreground color="-1049345"/>
+                  <text value="Regarder la vidéo"/>
+                </properties>
+              </component>
+              <component id="2dc22" class="javax.swing.JLabel" binding="Note">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="b25c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Durée :"/>
+                </properties>
+              </component>
+              <component id="b3acc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Année :"/>
+                </properties>
+              </component>
+              <component id="fa9d8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Acteur(s) :"/>
+                </properties>
+              </component>
+              <component id="d6d4e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Réalisateur(s) :"/>
+                </properties>
+              </component>
+              <component id="9e1b8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Note :"/>
+                </properties>
+              </component>
+              <component id="f6985" class="javax.swing.JLabel" binding="Resume">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="c2977" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Résumé :"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

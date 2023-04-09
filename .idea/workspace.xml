@@ -4,27 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Modif + interface connection inscription">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/VideoRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Comedie1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Drame1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Drame2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Fiction1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Musical1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/image/Policier1.jpg" afterDir="false" />
+    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Dernier DAO">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/Video.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/po.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/po.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mysql-connector-java-8.0.25.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/mysql-connector-java-8.0.25.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Catalogue_video.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/VideoRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/VideoRenderer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,27 +49,34 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Abdallah/Desktop/ING3/Deuxième semestre/Java/TP/TP4/projetNetflix/src",
+    "last_opened_file_path": "C:/Users/talbi/IdeaProjects/projetNetflix/target/classes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\target\classes" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\target\classes" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java\Vue" />
-      <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java\Modele" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\src" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -98,6 +92,10 @@
       <option name="presentableId" value="Default" />
       <updated>1679583259611</updated>
       <workItem from="1679583261029" duration="3000" />
+      <workItem from="1680977271989" duration="894000" />
+      <workItem from="1680978259049" duration="1103000" />
+      <workItem from="1680998662796" duration="1574000" />
+      <workItem from="1681042235668" duration="7220000" />
     </task>
     <task id="LOCAL-00001" summary="Modele premiere partie">
       <created>1680507539688</created>
@@ -136,6 +134,9 @@
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

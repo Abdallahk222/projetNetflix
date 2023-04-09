@@ -4,11 +4,16 @@ import Modele.Video;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.URI;
 
 public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
     private JLabel VidImg = new JLabel();
     private JLabel VidTitre = new JLabel();
     private JLabel VidAnnee = new JLabel();
+
+    //private JButton VidButton = new JButton();
 
 
     public VideoRenderer() {
@@ -19,7 +24,9 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
         add(VidImg, BorderLayout.CENTER);
         add(panelText, BorderLayout.SOUTH);
 
+
     }
+
 
     @Override
     public Component getListCellRendererComponent(JList<? extends Video> list,
@@ -46,12 +53,17 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
             VidAnnee.setBackground(list.getSelectionBackground());
             VidImg.setBackground(list.getSelectionBackground());
             setBackground(list.getSelectionBackground());
+            //new Page_video(video);
+
         } else {
             VidTitre.setBackground(list.getBackground());
             VidAnnee.setBackground(list.getBackground());
             VidImg.setBackground(list.getBackground());
             setBackground(list.getBackground());
         }
+
+
+
         return this;
     }
 }

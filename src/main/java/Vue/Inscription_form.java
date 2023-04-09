@@ -23,7 +23,10 @@ public class Inscription_form extends JFrame{
     public Inscription_form(){
         setLayout(null);
         setContentPane(inscription_p);
-        setSize(800,600);
+        //setSize(1920,1080);
+        this.pack();
+        this.setDefaultLookAndFeelDecorated(true);
+        this.setExtendedState(this.MAXIMIZED_BOTH);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Inscription");
 

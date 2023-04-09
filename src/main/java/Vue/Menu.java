@@ -13,7 +13,10 @@ public class Menu extends JFrame{
     public Menu(){
         setLayout(null);
         setContentPane(Menu);
-        setSize(300,300);
+        //setSize(1920,1080);
+        this.pack();
+        this.setDefaultLookAndFeelDecorated(true);
+        this.setExtendedState(this.MAXIMIZED_BOTH);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu");
         setVisible(true);
