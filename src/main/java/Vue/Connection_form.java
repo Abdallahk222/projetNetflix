@@ -2,6 +2,7 @@ package Vue;
 
 import Controleur.Login;
 import Modele.Client;
+import Modele.Direction;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -16,6 +17,8 @@ public class Connection_form extends JFrame{
     private JButton cancel;
     private JLabel mdp;
     private JLabel email;
+    private JCheckBox checkadmin;
+    private JLabel jadmin;
     private JLabel validation;
 
     public Connection_form(){
@@ -36,24 +39,34 @@ public class Connection_form extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 Client client=new Client();
+                Direction direction= new Direction();
                 client.setEmail(temail.getText());
                 client.setMdp(String.valueOf(tmdp.getPassword()));
                 Login log= new Login();
-                if(!String.valueOf(tmdp.getPassword()).equals("") && !temail.getText().equals("")) {
-                    if (log.signIn(client)) {
-                        validation.setText("Connection établie !");
-                        dispose();
-                        new Catalogue_video();
+                if(checkadmin.isSelected()){
+                    if(log.SignDirection(direction)){
+                        validation.setText("Bienvenue admin !");
                     }
                     else{
-                        validation.setText("Email ou Mot de Passe incorrect");
+                        validation.setText("Veuillez indiquer un mot de passe correct");
                     }
                 }
-                else{
-                    validation.setText("Veuillez remplir toutes les informations");
+                else {
+                    if (!String.valueOf(tmdp.getPassword()).equals("") && !temail.getText().equals("")) {
+                        if (log.signIn(client)) {
+                            validation.setText("Connection établie !");
+                            dispose();
+                            new Catalogue_video();
+                        } else {
+                            validation.setText("Email ou Mot de Passe incorrect");
+                        }
+                    } else {
+                        validation.setText("Veuillez remplir toutes les informations");
+                    }
                 }
 
-            }
+                }
+
         });
     }
 

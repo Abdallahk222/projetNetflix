@@ -26,4 +26,20 @@ public class Login {
         }
         return false;
     }
-}
+
+    public boolean SignDirection(Direction direction)
+    {
+        DirectionDao directiondao =  new DirectionDao();
+        List<Direction> directionList;
+        directionList = directiondao.lister();
+        int i = 0;
+        while(directionList.iterator().hasNext()){
+           Direction direction1;
+            direction1= directionList.get(i);
+            if(direction1.getEmail_ad().equals(direction.getEmail_ad()) && direction1.getMdp_ad().equals(direction.getMdp_ad())){
+                return true;
+            }
+            i++;
+        }
+        return false;
+    }}
