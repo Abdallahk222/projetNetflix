@@ -18,7 +18,6 @@ public class Connection_form extends JFrame{
     private JLabel mdp;
     private JLabel email;
     private JCheckBox checkadmin;
-    private JLabel jadmin;
     private JLabel validation;
 
     public Connection_form(){
@@ -40,6 +39,8 @@ public class Connection_form extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 Client client=new Client();
                 Direction direction= new Direction();
+                direction.setEmail_ad(temail.getText());
+                direction.setMdp_ad(String.valueOf(tmdp.getPassword()));
                 client.setEmail(temail.getText());
                 client.setMdp(String.valueOf(tmdp.getPassword()));
                 Login log= new Login();

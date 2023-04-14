@@ -35,4 +35,60 @@ public class ListageVideos {
        return list;
     }
 
+    public List<Video> recherche(String s){
+        List<Video> list=this.ListVideo();
+        List<Video> list_f=new ArrayList<>();
+        for(Video value: list){
+            if(value.getTitre().contains(s)){
+                list_f.add(value);
+            }
+        }
+        return list_f;
+    }
+
+    // fonction de recherche spécifique
+
+    public List<Video> recherche_sp(String s, String filtre){
+        List<Video> list=this.ListVideo();
+        List<Video> list_f=new ArrayList<>();
+        for(Video value: list){
+            if(filtre.equals("Titre")){
+                if(value.getTitre().contains(s)){
+                    list_f.add(value);
+                }
+            }
+            if(filtre.equals("Acteur")){
+                if(value.getActeur().contains(s)){
+                    list_f.add(value);
+                }
+            }
+            if(filtre.equals("Réalisateur")){
+                if(value.getRealisateur().contains(s)){
+                    list_f.add(value);
+                }
+            }
+        }
+        return list_f;
+    }
+
+    // filtre de popularité (ici 2 choix : note >5 -> i=0 ; note >8 -> i=1)
+    public List<Video> filtre(List<Video> list,int i){
+        List<Video> list_f=new ArrayList<>();
+        if(i==0){
+            for(Video value : list){
+                if(value.getNote_j()>5) {
+                    list_f.add(value);
+                }
+            }
+        }
+        if(i==1){
+            for(Video value : list){
+                if(value.getNote_j()>8) {
+                    list_f.add(value);
+                }
+            }
+        }
+        return list_f;
+    }
+
 }

@@ -15,14 +15,13 @@ public class Login {
         ClientDAO clientdao= new ClientDAO();
         List<Client> clientList;
         clientList=clientdao.lister();
-        int i=0;
-        while(clientList.iterator().hasNext()){
+
+        for (Client value : clientList) {
             Client client1;
-            client1=clientList.get(i);
-            if(client1.getEmail().equals(client.getEmail()) && client1.getMdp().equals(client.getMdp())){
+            client1 = value;
+            if (client1.getEmail().equals(client.getEmail()) && client1.getMdp().equals(client.getMdp())) {
                 return true;
             }
-            i++;
         }
         return false;
     }
@@ -32,14 +31,13 @@ public class Login {
         DirectionDao directiondao =  new DirectionDao();
         List<Direction> directionList;
         directionList = directiondao.lister();
-        int i = 0;
-        while(directionList.iterator().hasNext()){
+
+        for( Direction value : directionList){
            Direction direction1;
-            direction1= directionList.get(i);
-            if(direction1.getEmail_ad().equals(direction.getEmail_ad()) && direction1.getMdp_ad().equals(direction.getMdp_ad())){
+           direction1=value;
+           if(direction1.getEmail_ad().equals(direction.getEmail_ad()) && direction1.getMdp_ad().equals(direction.getMdp_ad())){
                 return true;
             }
-            i++;
         }
         return false;
     }}

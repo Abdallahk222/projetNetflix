@@ -4,6 +4,9 @@ import Controleur.ListageVideos;
 import Modele.Video;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.util.List;
 
 public class Catalogue_video extends JFrame{
@@ -12,6 +15,7 @@ public class Catalogue_video extends JFrame{
     private JTextField searchbar;
 
     private JList<Video> list_rec;
+    private JList<Video> list_rec2;
     private JButton searchbutton;
     private JPanel panel2;
     private JLabel titre2;
@@ -29,17 +33,170 @@ public class Catalogue_video extends JFrame{
 
     private JLabel cat5;
     private JLabel cat6;
+    private JRadioButton note5RB;
+    private JRadioButton note8RB;
+    private JLabel poplabel;
+    private JPanel panel_rec;
+    private JComboBox choixbox;
+
 
     public Catalogue_video(){
         setLayout(null);
+
         setContentPane(mainpanel);
         this.pack();
         this.setDefaultLookAndFeelDecorated(true);
         this.setExtendedState(this.MAXIMIZED_BOTH);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-        setTitle("cat");
+        setTitle("Interface Utilisateur");
         setVisible(true);
+
+        // barre de recherche
+
+        searchbutton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                DefaultListModel<Video> model_rec2 = new DefaultListModel<>();
+                ListageVideos list2=new ListageVideos();
+
+                String ch= choixbox.getSelectedItem().toString();
+
+                // filtre en fonction des choix de l'utilisateur : popularité, acteur, titre, réalisateur
+
+                if(note5RB.isSelected()) {
+                    List<Video> vidlist_rec2 = list2.recherche_sp(searchbar.getText(), ch);
+                    List<Video> filtre = list2.filtre(vidlist_rec2,0);
+                    for (Video value : filtre) {
+                        model_rec2.addElement(value);
+                    }
+                    list_rec2 = new JList<>(model_rec2);
+                    list_rec2.setCellRenderer(new VideoRenderer());
+                    list_rec2.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+                    list_rec2.setVisibleRowCount(2);
+                    list_rec.setModel(model_rec2);
+                } else if (note8RB.isSelected()) {
+                    List<Video> vidlist_rec2 = list2.recherche_sp(searchbar.getText(), ch);
+                    List<Video> filtre = list2.filtre(vidlist_rec2,1);
+                    for (Video value : filtre) {
+                        model_rec2.addElement(value);
+                    }
+                    list_rec2 = new JList<>(model_rec2);
+                    list_rec2.setCellRenderer(new VideoRenderer());
+                    list_rec2.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+                    list_rec2.setVisibleRowCount(2);
+                    list_rec.setModel(model_rec2);
+                }
+                else {
+                    List<Video> vidlist_rec2 = list2.recherche_sp(searchbar.getText(), ch);
+                    for (Video value : vidlist_rec2) {
+                        model_rec2.addElement(value);
+                    }
+                    list_rec2 = new JList<>(model_rec2);
+                    list_rec2.setCellRenderer(new VideoRenderer());
+                    list_rec2.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+                    list_rec2.setVisibleRowCount(2);
+                    list_rec.setModel(model_rec2);
+                }
+
+            }
+        });
+
+        //
+
+        list1.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list2.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list3.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list4.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list5.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list6.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
+        list_rec.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video);
+                }
+            }
+        });
+
     }
+
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
@@ -113,6 +270,7 @@ public class Catalogue_video extends JFrame{
         list5.setLayoutOrientation(JList.HORIZONTAL_WRAP);
         list5.setVisibleRowCount(1);
 
+
         //Liste 6 film Fiction (categorie 6)
 
         DefaultListModel<Video> model6 = new DefaultListModel<>();
@@ -125,9 +283,22 @@ public class Catalogue_video extends JFrame{
         list6.setCellRenderer(new VideoRenderer());
         list6.setLayoutOrientation(JList.HORIZONTAL_WRAP);
         list6.setVisibleRowCount(1);
+
+        DefaultListModel<Video> model_rec = new DefaultListModel<>();
+        ListageVideos list=new ListageVideos();
+
+        List<Video> vidlist_rec=list.recherche("");
+        for(Video value: vidlist_rec){
+            model_rec.addElement(value);
+        }
+        list_rec=new JList<>(model_rec);
+        list_rec.setCellRenderer(new VideoRenderer());
+        list_rec.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+        list_rec.setVisibleRowCount(2);
     }
 
     public static void main(String[] args) {
         Catalogue_video c=new Catalogue_video();
+
     }
 }

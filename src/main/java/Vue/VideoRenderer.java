@@ -2,18 +2,18 @@ package Vue;
 
 import Modele.Video;
 
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.net.URI;
+
+import javax.swing.*;
 
 public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
     private JLabel VidImg = new JLabel();
     private JLabel VidTitre = new JLabel();
     private JLabel VidAnnee = new JLabel();
+    private JButton Vidbuton =new JButton("Voir plus");
 
-    //private JButton VidButton = new JButton();
 
 
     public VideoRenderer() {
@@ -21,12 +21,10 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
         JPanel panelText = new JPanel(new GridLayout(0, 1));
         panelText.add(VidTitre);
         panelText.add(VidAnnee);
+        panelText.add(Vidbuton);
         add(VidImg, BorderLayout.CENTER);
         add(panelText, BorderLayout.SOUTH);
-
-
     }
-
 
     @Override
     public Component getListCellRendererComponent(JList<? extends Video> list,
@@ -36,6 +34,13 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
                 "/image/" + video.getImg() + ".jpg")));
         VidTitre.setText(video.getTitre());
         VidAnnee.setText(video.getAnnee());
+
+        Vidbuton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new Page_video(video);
+            }
+        });
 
         VidTitre.setHorizontalAlignment(JLabel.CENTER);
         VidAnnee.setHorizontalAlignment(JLabel.CENTER);
@@ -53,16 +58,12 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
             VidAnnee.setBackground(list.getSelectionBackground());
             VidImg.setBackground(list.getSelectionBackground());
             setBackground(list.getSelectionBackground());
-            //new Page_video(video);
-
         } else {
             VidTitre.setBackground(list.getBackground());
             VidAnnee.setBackground(list.getBackground());
             VidImg.setBackground(list.getBackground());
             setBackground(list.getBackground());
         }
-
-
 
         return this;
     }
