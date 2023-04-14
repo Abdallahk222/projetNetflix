@@ -9,6 +9,17 @@ public class Login {
     public void signUp(Client client){
         ClientDAO clientdao= new ClientDAO();
         clientdao.ajouter(client);
+        List<Client> list_c=clientdao.lister();
+
+        // On récupère son id
+        client.setId(list_c.get(list_c.size()-1).getId());
+        System.out.println(client.getId());
+
+        // Creation de la liste personnalisée du client
+        Liste_clientDao listeClientDao=new Liste_clientDao();
+        Liste_client list=new Liste_client("Ma Liste","",client.getId());
+
+        listeClientDao.ajouter(list);
     }
 
     public boolean signIn(Client client){

@@ -17,24 +17,6 @@ public class Mise_a_jour {
     }
     //
 
-    // Methode ajout de liste personnalisé du client
-
-    // Creation de liste
-
-    public void ajouterlist(Liste_client obj) {
-        Liste_clientDao listeClientDao = new Liste_clientDao();
-        listeClientDao.ajouter(obj);
-    }
-
-    // Ajout de video dans une liste
-
-    public void ajoutervidlist(Liste_client obj1, Video obj2){
-        Liste_clientDao listeClientDao=new Liste_clientDao();
-        VideoDao videoDao=new VideoDao();
-        listeClientDao.contient(obj1, obj2);
-    }
-
-    //
 
     // Methode ajout de Video dans Visionne ie video vue par le client
 
@@ -86,5 +68,11 @@ public class Mise_a_jour {
         vis.setNote(note_client);
         vis.setVue(1);
         visionneDao.update(vis);
+    }
+
+    // Ajout de video dans une liste
+    public void ajout_contientliste(long id_list, long id_video){
+        Liste_clientDao listeClientDao=new Liste_clientDao();
+        listeClientDao.contient(id_list,id_video);
     }
 }

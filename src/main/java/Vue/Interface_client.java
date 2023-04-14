@@ -39,9 +39,18 @@ public class Interface_client extends JFrame{
     private JLabel poplabel;
     private JPanel panel_rec;
     private JComboBox choixbox;
+    private JList<Video> list_pref;
+    private JList<Video> list_perso;
+    private JButton bouttonlist_perso;
+    private JPanel panel3;
+    private JLabel titre_pref;
+    private JLabel titre_perso;
+
+    public Client client0;
 
 
     public Interface_client(Client client){
+        this.client0=client;
         setLayout(null);
 
         setContentPane(mainpanel);
@@ -103,7 +112,7 @@ public class Interface_client extends JFrame{
             }
         });
 
-        //
+        // Evenement associé au double clique sur une vidéo
 
         list1.addMouseListener(new MouseAdapter() {
             public void mouseClicked(MouseEvent evt) {
@@ -196,6 +205,49 @@ public class Interface_client extends JFrame{
             }
         });
 
+        list_pref.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video, client);
+                }
+            }
+        });
+
+        list_perso.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
+
+                    // Double-click detected
+                    int index = list.locationToIndex(evt.getPoint());
+                    Video video= (Video) list.getModel().getElementAt(index);
+                    new Page_video(video, client);
+                }
+            }
+        });
+
+        bouttonlist_perso.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ListageVideos l=new ListageVideos();
+                new Page_ajout(l.id_list(client0));
+
+                DefaultListModel<Video> model_perso2 = new DefaultListModel<>();
+                ListageVideos listage_perso=new ListageVideos();
+
+                List<Video> vidlist_perso=listage_perso.film_perso(client0);
+                for(Video value: vidlist_perso){
+                    model_perso2.addElement(value);
+                }
+
+                list_perso.setModel(model_perso2);
+            }
+        });
     }
 
 
@@ -285,6 +337,8 @@ public class Interface_client extends JFrame{
         list6.setLayoutOrientation(JList.HORIZONTAL_WRAP);
         list6.setVisibleRowCount(1);
 
+        // Liste par défaut recherche
+
         DefaultListModel<Video> model_rec = new DefaultListModel<>();
         ListageVideos list=new ListageVideos();
 
@@ -296,12 +350,37 @@ public class Interface_client extends JFrame{
         list_rec.setCellRenderer(new VideoRenderer());
         list_rec.setLayoutOrientation(JList.HORIZONTAL_WRAP);
         list_rec.setVisibleRowCount(2);
+
+        // Liste de film préférée
+
+        DefaultListModel<Video> model_pref = new DefaultListModel<>();
+        ListageVideos listage_pref=new ListageVideos();
+
+        List<Video> vidlist_pref=listage_pref.film_pref(this.client0);
+
+        for(Video value: vidlist_pref){
+            model_pref.addElement(value);
+        }
+        list_pref=new JList<>(model_pref);
+        list_pref.setCellRenderer(new VideoRenderer());
+        list_pref.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+        list_pref.setVisibleRowCount(1);
+
+        // Liste de film personnalisée du client
+
+        DefaultListModel<Video> model_perso = new DefaultListModel<>();
+        ListageVideos listage_perso=new ListageVideos();
+
+        List<Video> vidlist_perso=listage_perso.film_perso(this.client0);
+        for(Video value: vidlist_perso){
+            model_perso.addElement(value);
+        }
+
+        list_perso=new JList<>(model_perso);
+        list_perso.setCellRenderer(new VideoRenderer());
+        list_perso.setLayoutOrientation(JList.HORIZONTAL_WRAP);
+        list_perso.setVisibleRowCount(1);
+
     }
 
-    public static void main(String[] args) {
-        Client client=new Client("","z","e");
-        client.setId(5);
-        Interface_client c=new Interface_client(client);
-
-    }
 }

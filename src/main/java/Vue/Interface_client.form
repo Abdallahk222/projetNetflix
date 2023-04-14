@@ -335,6 +335,104 @@
               </component>
             </children>
           </grid>
+          <scrollpane id="4ae23">
+            <constraints>
+              <tabbedpane title="Mes Listes Personnalisées"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="18616" binding="panel3" layout-manager="GridLayoutManager" row-count="4" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints/>
+                <properties>
+                  <background color="-13487564"/>
+                  <foreground color="-1049345"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="658b" class="javax.swing.JLabel" binding="titre_pref">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="18" style="1"/>
+                      <foreground color="-1049345"/>
+                      <text value="Mes Films Préférés"/>
+                    </properties>
+                  </component>
+                  <component id="1403f" class="javax.swing.JLabel" binding="titre_perso">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font size="18" style="1"/>
+                      <foreground color="-1049345"/>
+                      <text value="Ma Liste Personalisée"/>
+                    </properties>
+                  </component>
+                  <component id="d1157" class="javax.swing.JButton" binding="bouttonlist_perso">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-12517360"/>
+                      <font size="12" style="1"/>
+                      <foreground color="-1049345"/>
+                      <text value="Ajouter une Vidéo"/>
+                    </properties>
+                  </component>
+                  <hspacer id="75e5f">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <scrollpane id="b963e">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="bc970" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                        <margin top="0" left="0" bottom="0" right="0"/>
+                        <constraints/>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="f4dd6" class="javax.swing.JList" binding="list_pref" custom-create="true">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="50"/>
+                              </grid>
+                            </constraints>
+                            <properties>
+                              <background color="-13487564"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </scrollpane>
+                  <scrollpane id="3c7bf">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <component id="ca421" class="javax.swing.JList" binding="list_perso" custom-create="true">
+                        <constraints/>
+                        <properties>
+                          <background color="-13487564"/>
+                        </properties>
+                      </component>
+                    </children>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
         </children>
       </tabbedpane>
     </children>

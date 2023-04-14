@@ -91,4 +91,53 @@ public class ListageVideos {
         return list_f;
     }
 
+    public List<Video> film_pref(Client client){
+        VisionneDao visionneDao=new VisionneDao();
+        List<Visionne> visionneList=visionneDao.lister();
+
+        VideoDao videoDao=new VideoDao();
+        List<Video> videoList=videoDao.lister();
+
+        // On cree une liste de videos à partir de la liste de visionnage
+
+        List<Video> list_f=new ArrayList<>();
+
+        for(Visionne value: visionneList){
+            // On recherche chaque video dans la liste
+
+            for(Video value1: videoList){
+                if((value.getId_video()==value1.getId_video()) && (value.getId_client()==client.getId()) && (value.getNote()>7)){
+                    list_f.add(value1);
+                }
+            }
+
+        }
+        return list_f;
+    }
+
+    // Methode recherchant la liste correspondant au client
+    public long id_list(Client client){
+        Liste_clientDao listeClientDao=new Liste_clientDao();
+        List<Liste_client> list=listeClientDao.lister();
+
+        long id_list = 0;
+
+        for(Liste_client value: list){
+            if(value.getId_client()==client.getId()){
+                id_list=value.getId_list();
+            }
+        }
+        return id_list;
+    }
+
+    public List<Video> film_perso(Client client){
+        Liste_clientDao listeClientDao=new Liste_clientDao();
+        List<Video> listf;
+        long id_list = id_list(client);
+
+        listf=listeClientDao.contient_listvideo(id_list);
+
+        return listf;
+    }
+
 }

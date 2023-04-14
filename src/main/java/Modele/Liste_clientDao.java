@@ -79,18 +79,50 @@ public class Liste_clientDao extends MethodDao<Liste_client>{
         return liste_clientList;
     }
 
-    public void contient(Liste_client obj1, Video obj2){
+    public void contient(long id_list, long id_video){
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
-                    "INSERT INTO contient_liste (id_video, id_list) " +
+                    "INSERT INTO contient_liste (id_video, id_liste) " +
                             "VALUES(?, ?)");
-            preparedStatement.setLong(1, obj2.getId_video());
-            preparedStatement.setLong(2, obj1.getId_list());
+            preparedStatement.setLong(1, id_video);
+            preparedStatement.setLong(2, id_list);
 
             preparedStatement.executeUpdate();
         }
         catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+    // Liste de video pour une id_list
+
+    public List<Video> contient_listvideo(long id_list){
+        List<Video> videoList=new ArrayList<>();
+        try {
+            ResultSet resultSet=this.connection.createStatement().executeQuery("SELECT v.id_video, titre, lien, img, resume, teaser," +
+                    " duree, annee, acteur, realisateur, Note_j FROM video AS v JOIN contient_liste AS c ON c.id_video=v.id_video " +
+                    "WHERE c.id_liste= "+id_list+";");
+
+            while(resultSet.next()){
+                Video video=new Video();
+                video.setId_video(resultSet.getLong("v.id_video"));
+                video.setTitre(resultSet.getString("titre"));
+                video.setLien(resultSet.getString("lien"));
+                video.setImg(resultSet.getString("img"));
+                video.setResume(resultSet.getString("resume"));
+                video.setTeaser(resultSet.getString("teaser"));
+                video.setDuree(resultSet.getString("duree"));
+                video.setAnnee(resultSet.getString("annee"));
+                video.setActeur(resultSet.getString("acteur"));
+                video.setRealisateur(resultSet.getString("realisateur"));
+                video.setNote_j(resultSet.getInt("Note_j"));
+
+                videoList.add(video);
+            }
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+        return videoList;
     }
 }
