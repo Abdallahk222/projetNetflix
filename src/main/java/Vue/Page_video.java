@@ -1,14 +1,14 @@
 package Vue;
 
-import javax.swing.*;
-import Modele.*;
+import Controleur.Mise_a_jour;
+import Modele.Client;
+import Modele.Video;
 
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Page_video extends JFrame {
 
@@ -24,8 +24,11 @@ public class Page_video extends JFrame {
     private JLabel Acteur;
     private JLabel Realisateur;
     private JLabel Note;
+    private JSpinner Note_c;
+    private JButton button_note;
+    private JLabel Note_client;
 
-    public Page_video(Video video){
+    public Page_video(Video video, Client client){
         setLayout(null);
         setContentPane(Page_video);
         //setSize(1080,720);
@@ -52,6 +55,8 @@ public class Page_video extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 try{
                     Desktop.getDesktop().browse(new URI(video.getLien()));
+                    Mise_a_jour maj=new Mise_a_jour();
+                    maj.ajoutvisionne(client,video);
                 }
                 catch(Exception o){
                     o.printStackTrace();
@@ -71,12 +76,13 @@ public class Page_video extends JFrame {
 
             }
         });
+        button_note.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Mise_a_jour maj2=new Mise_a_jour();
+                maj2.note_visionne(client,video, (Integer) Note_c.getValue());
+            }
+        });
     }
 
-    public static void main(String[] args) {
-        VideoDao v = new VideoDao();
-        List<Video> l = new ArrayList<>();
-        l=v.lister();
-        new Page_video(l.get(0));
-    }
 }

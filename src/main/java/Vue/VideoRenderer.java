@@ -35,13 +35,6 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
         VidTitre.setText(video.getTitre());
         VidAnnee.setText(video.getAnnee());
 
-        Vidbuton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                new Page_video(video);
-            }
-        });
-
         VidTitre.setHorizontalAlignment(JLabel.CENTER);
         VidAnnee.setHorizontalAlignment(JLabel.CENTER);
         VidImg.setHorizontalAlignment(JLabel.CENTER);

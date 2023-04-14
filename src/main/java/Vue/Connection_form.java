@@ -57,7 +57,7 @@ public class Connection_form extends JFrame{
                         if (log.signIn(client)) {
                             validation.setText("Connection établie !");
                             dispose();
-                            new Catalogue_video();
+                            new Interface_client(client);
                         } else {
                             validation.setText("Email ou Mot de Passe incorrect");
                         }

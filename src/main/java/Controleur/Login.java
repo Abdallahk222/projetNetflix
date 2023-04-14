@@ -20,6 +20,7 @@ public class Login {
             Client client1;
             client1 = value;
             if (client1.getEmail().equals(client.getEmail()) && client1.getMdp().equals(client.getMdp())) {
+                client.setId(client1.getId());
                 return true;
             }
         }

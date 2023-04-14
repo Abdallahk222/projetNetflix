@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="Page_video" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="927" height="400"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -15,7 +15,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="5bffa" binding="Page_video2" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="5bffa" binding="Page_video2" layout-manager="GridLayoutManager" row-count="10" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints/>
             <properties>
@@ -27,7 +27,7 @@
             <children>
               <component id="a7722" class="javax.swing.JLabel" binding="titrevideo">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <font size="36" style="1"/>
@@ -37,7 +37,10 @@
               </component>
               <component id="75180" class="javax.swing.JLabel" binding="Image">
                 <constraints>
-                  <grid row="3" column="3" row-span="4" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="4" row-span="5" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="400" height="-1"/>
+                    <maximum-size width="400" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -46,7 +49,7 @@
               </component>
               <component id="ff7d1" class="javax.swing.JLabel" binding="Duree">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -55,7 +58,7 @@
               </component>
               <component id="a4d9e" class="javax.swing.JLabel" binding="Annee">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -64,7 +67,7 @@
               </component>
               <component id="d6347" class="javax.swing.JLabel" binding="Acteur">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -73,7 +76,7 @@
               </component>
               <component id="1be79" class="javax.swing.JLabel" binding="Realisateur">
                 <constraints>
-                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -82,7 +85,7 @@
               </component>
               <component id="19189" class="javax.swing.JButton" binding="Teaser">
                 <constraints>
-                  <grid row="8" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <background color="-12517360"/>
@@ -90,19 +93,9 @@
                   <text value="Teaser"/>
                 </properties>
               </component>
-              <component id="dc9cb" class="javax.swing.JButton" binding="Regarder">
-                <constraints>
-                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-12517360"/>
-                  <foreground color="-1049345"/>
-                  <text value="Regarder la vidéo"/>
-                </properties>
-              </component>
               <component id="2dc22" class="javax.swing.JLabel" binding="Note">
                 <constraints>
-                  <grid row="6" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -156,7 +149,7 @@
               </component>
               <component id="f6985" class="javax.swing.JLabel" binding="Resume">
                 <constraints>
-                  <grid row="7" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
@@ -165,11 +158,55 @@
               </component>
               <component id="c2977" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <foreground color="-1049345"/>
                   <text value="Résumé :"/>
+                </properties>
+              </component>
+              <component id="73817" class="javax.swing.JSpinner" binding="Note_c">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="150" height="-1"/>
+                    <maximum-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12517360"/>
+                  <foreground color="-1049345"/>
+                </properties>
+              </component>
+              <component id="dc9cb" class="javax.swing.JButton" binding="Regarder">
+                <constraints>
+                  <grid row="9" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-12517360"/>
+                  <foreground color="-1049345"/>
+                  <text value="Regarder la vidéo"/>
+                </properties>
+              </component>
+              <component id="22b5a" class="javax.swing.JButton" binding="button_note">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="-1"/>
+                    <maximum-size width="100" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-12517360"/>
+                  <foreground color="-1049345"/>
+                  <text value="Valider"/>
+                </properties>
+              </component>
+              <component id="26e6e" class="javax.swing.JLabel" binding="Note_client">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <foreground color="-1049345"/>
+                  <text value="Votre Note"/>
                 </properties>
               </component>
             </children>

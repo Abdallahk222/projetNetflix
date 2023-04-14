@@ -1,20 +1,21 @@
 package Modele;
 
+import java.sql.Date;
+
 public class Visionne {
     private long id_video;
     private long id_client;
-    private String date_v;
-    private String Pause;
+    private Date date_v;
+    private String Pause="";
     private int Note;
     private int Vue=0;
 
     public Visionne(){}
 
-    public Visionne(long id_video, long id_client, String date_v, String pause) {
+    public Visionne(long id_video, long id_client, Date date_v) {
         this.id_video = id_video;
         this.id_client = id_client;
         this.date_v = date_v;
-        Pause = pause;
     }
 
     public long getId_video() {
@@ -33,11 +34,11 @@ public class Visionne {
         this.id_client = id_client;
     }
 
-    public String getDate_v() {
+    public Date getDate_v() {
         return date_v;
     }
 
-    public void setDate_v(String date_v) {
+    public void setDate_v(Date date_v) {
         this.date_v = date_v;
     }
 

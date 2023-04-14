@@ -29,7 +29,7 @@ public class VisionneRenderer extends JPanel implements ListCellRenderer<Visionn
 
 
         VidTitre.setText(String.valueOf(visionne.getId_video()));
-        VidDate.setText(visionne.getDate_v());
+        VidDate.setText(String.valueOf(visionne.getDate_v()));
 
         VidTitre.setHorizontalAlignment(JLabel.CENTER);
         VidDate.setHorizontalAlignment(JLabel.CENTER);

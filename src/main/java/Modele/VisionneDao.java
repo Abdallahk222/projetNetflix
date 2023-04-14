@@ -17,7 +17,7 @@ public class VisionneDao extends MethodDao<Visionne>{
                             "VALUES(?, ?, ?, ?, ?, ?)");
             preparedStatement.setLong(1, obj.getId_video());
             preparedStatement.setLong(2, obj.getId_client());
-            preparedStatement.setString(3, obj.getDate_v());
+            preparedStatement.setDate(3, obj.getDate_v());
             preparedStatement.setString(4, obj.getPause());
             preparedStatement.setInt(5, obj.getNote());
             preparedStatement.setInt(6, obj.getVue());
@@ -33,16 +33,13 @@ public class VisionneDao extends MethodDao<Visionne>{
     public void update(Visionne obj) {
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
-                    "UPDATE visionne SET id_video = ?, id_client = ?, date_v = ?, Pause = ?, Note = ?, Vue = ?" +
-                            "WHERE id_video = ? AND id_client = ?");
-            preparedStatement.setLong(1, obj.getId_video());
-            preparedStatement.setLong(2, obj.getId_client());
-            preparedStatement.setString(3, obj.getDate_v());
-            preparedStatement.setString(4, obj.getPause());
-            preparedStatement.setInt(5, obj.getNote());
-            preparedStatement.setInt(6, obj.getVue());
-            preparedStatement.setLong(7, obj.getId_video());
-            preparedStatement.setLong(8, obj.getId_client());
+                    "UPDATE visionne SET date_v = ?, Pause = ?, Note = ?, Vue = ? WHERE (id_video = ? AND id_client = ?)");
+            preparedStatement.setDate(1, obj.getDate_v());
+            preparedStatement.setString(2, obj.getPause());
+            preparedStatement.setInt(3, obj.getNote());
+            preparedStatement.setInt(4, obj.getVue());
+            preparedStatement.setLong(5, obj.getId_video());
+            preparedStatement.setLong(6, obj.getId_client());
 
             preparedStatement.executeUpdate();
         }
@@ -76,7 +73,7 @@ public class VisionneDao extends MethodDao<Visionne>{
                 Visionne visionne=new Visionne();
                 visionne.setId_video(resultSet.getLong("id_video"));
                 visionne.setId_client(resultSet.getLong("id_client"));
-                visionne.setDate_v(resultSet.getString("date_v"));
+                visionne.setDate_v(resultSet.getDate("date_v"));
                 visionne.setPause(resultSet.getString("Pause"));
                 visionne.setNote(resultSet.getInt("Note"));
                 visionne.setVue(resultSet.getInt("Vue"));
@@ -99,7 +96,7 @@ public class VisionneDao extends MethodDao<Visionne>{
                 Visionne visionne=new Visionne();
                 visionne.setId_video(resultSet.getLong("id_video"));
                 visionne.setId_client(resultSet.getLong("id_client"));
-                visionne.setDate_v(resultSet.getString("date_v"));
+                visionne.setDate_v(resultSet.getDate("date_v"));
                 visionne.setPause(resultSet.getString("Pause"));
                 visionne.setNote(resultSet.getInt("Note"));
                 visionne.setVue(resultSet.getInt("Vue"));

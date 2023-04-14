@@ -1,6 +1,7 @@
 package Vue;
 
 import Controleur.ListageVideos;
+import Modele.Client;
 import Modele.Video;
 
 import javax.swing.*;
@@ -9,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.*;
 import java.util.List;
 
-public class Catalogue_video extends JFrame{
+public class Interface_client extends JFrame{
     private JPanel mainpanel;
     private JTabbedPane tab;
     private JTextField searchbar;
@@ -40,7 +41,7 @@ public class Catalogue_video extends JFrame{
     private JComboBox choixbox;
 
 
-    public Catalogue_video(){
+    public Interface_client(Client client){
         setLayout(null);
 
         setContentPane(mainpanel);
@@ -112,7 +113,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -125,7 +126,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -138,7 +139,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -151,7 +152,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -164,7 +165,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -177,7 +178,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -190,7 +191,7 @@ public class Catalogue_video extends JFrame{
                     // Double-click detected
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
-                    new Page_video(video);
+                    new Page_video(video, client);
                 }
             }
         });
@@ -298,7 +299,9 @@ public class Catalogue_video extends JFrame{
     }
 
     public static void main(String[] args) {
-        Catalogue_video c=new Catalogue_video();
+        Client client=new Client("","z","e");
+        client.setId(5);
+        Interface_client c=new Interface_client(client);
 
     }
 }
