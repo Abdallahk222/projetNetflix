@@ -94,4 +94,9 @@ public class Mise_a_jour {
         DirectionDao directionDao = new DirectionDao();
         directionDao.maj2(direction, video);
     }
+
+    public void modifierclient(Client client){
+        ClientDAO clientdao= new ClientDAO();
+        clientdao.update(client);
+    }
 }

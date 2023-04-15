@@ -33,7 +33,7 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
         VidImg.setIcon(new ImageIcon(getClass().getResource(
                 "/image/" + video.getImg() + ".jpg")));
         VidTitre.setText(video.getTitre());
-        VidAnnee.setText(video.getAnnee());
+        VidAnnee.setText(video.getAnnee().substring(0,4));
 
         VidTitre.setHorizontalAlignment(JLabel.CENTER);
         VidAnnee.setHorizontalAlignment(JLabel.CENTER);

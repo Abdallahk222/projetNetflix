@@ -23,7 +23,6 @@ public class Connection_form extends JFrame{
     public Connection_form(){
         setLayout(null);
         setContentPane(Connection);
-        //setSize(600,300);
         this.pack();
         this.setDefaultLookAndFeelDecorated(true);
         this.setExtendedState(this.MAXIMIZED_BOTH);
@@ -49,6 +48,7 @@ public class Connection_form extends JFrame{
                 Login log= new Login();
                 if(checkadmin.isSelected()){
                     if(log.SignDirection(direction)){
+                        new Interface_direction(direction);
                         validation.setText("Bienvenue admin !");
                     }
                     else{

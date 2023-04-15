@@ -31,8 +31,7 @@ public class ClientDAO extends MethodDao<Client>{
     public void update(Client obj) {
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
-                    "UPDATE client SET nom_client = ?, email = ?, mdp = ?, reprise = ?, qualite = ?, sous_titre = ?" +
-                            "WHERE id_client = ?");
+                    "UPDATE client SET nom_client = ?, email = ?, mdp = ?, reprise = ?, qualite = ?, sous_titre = ? WHERE id_client = ?");
             preparedStatement.setString(1, obj.getNom_client());
             preparedStatement.setString(2, obj.getEmail());
             preparedStatement.setString(3, obj.getMdp());

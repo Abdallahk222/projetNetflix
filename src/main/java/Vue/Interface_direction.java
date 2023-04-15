@@ -1,5 +1,6 @@
 package Vue;
 
+import Controleur.ListageClients;
 import Controleur.ListageVideos;
 import Modele.*;
 
@@ -14,6 +15,8 @@ public class Interface_direction extends JFrame {
     private JList<Video> list1;
     private JButton ajout;
     private JPanel mainpanel;
+    private JTabbedPane tabbedPane1;
+    private JList<Client> list2;
 
 
     public Interface_direction(Direction direction){
@@ -42,7 +45,19 @@ public class Interface_direction extends JFrame {
             }
         });
 
+        list2.addMouseListener(new MouseAdapter() {
+            public void mouseClicked(MouseEvent evt) {
+                JList list2 = (JList)evt.getSource();
+                if (evt.getClickCount() == 2) {
 
+                    // Double-click detected
+                    int index = list2.locationToIndex(evt.getPoint());
+                    Client client= (Client) list2.getModel().getElementAt(index);
+                    new Client_modifier(client, direction);
+                    dispose();
+                }
+            }
+        });
         ajout.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -65,6 +80,17 @@ public class Interface_direction extends JFrame {
         list1.setCellRenderer(new VideoRenderer());
         list1.setLayoutOrientation(JList.HORIZONTAL_WRAP);
         list1.setVisibleRowCount(2);
+
+        /////////////////////////////////////////////////////////////////////
+
+        DefaultListModel<Client> model2 = new DefaultListModel<>();
+        ListageClients listc=new ListageClients();
+
+        List<Client> clientlist_rec=listc.ListClients();
+        for(Client value: clientlist_rec){
+            model2.addElement(value);
+        }
+        list2=new JList<>(model2);
     }
 
     public static void main(String[] args) {

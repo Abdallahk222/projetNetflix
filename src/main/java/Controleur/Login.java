@@ -48,6 +48,7 @@ public class Login {
            Direction direction1;
            direction1=value;
            if(direction1.getEmail_ad().equals(direction.getEmail_ad()) && direction1.getMdp_ad().equals(direction.getMdp_ad())){
+               direction.setId_admin(direction1.getId_admin());
                 return true;
             }
         }
