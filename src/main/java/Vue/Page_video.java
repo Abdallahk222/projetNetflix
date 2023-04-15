@@ -27,6 +27,7 @@ public class Page_video extends JFrame {
     private JSpinner Note_c;
     private JButton button_note;
     private JLabel Note_client;
+    private JButton retour;
 
     public Page_video(Video video, Client client){
         setLayout(null);
@@ -81,6 +82,13 @@ public class Page_video extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 Mise_a_jour maj2=new Mise_a_jour();
                 maj2.note_visionne(client,video, (Integer) Note_c.getValue());
+            }
+        });
+        retour.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new Interface_client(client);
             }
         });
     }

@@ -123,6 +123,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -136,6 +137,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -149,6 +151,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -162,6 +165,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -175,6 +179,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -188,6 +193,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -201,6 +207,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -214,6 +221,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -227,6 +235,7 @@ public class Interface_client extends JFrame{
                     int index = list.locationToIndex(evt.getPoint());
                     Video video= (Video) list.getModel().getElementAt(index);
                     new Page_video(video, client);
+                    dispose();
                 }
             }
         });
@@ -235,17 +244,10 @@ public class Interface_client extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 ListageVideos l=new ListageVideos();
-                new Page_ajout(l.id_list(client0));
+                dispose();
+                new Page_ajout(l.id_list(client0), client0);
 
-                DefaultListModel<Video> model_perso2 = new DefaultListModel<>();
-                ListageVideos listage_perso=new ListageVideos();
 
-                List<Video> vidlist_perso=listage_perso.film_perso(client0);
-                for(Video value: vidlist_perso){
-                    model_perso2.addElement(value);
-                }
-
-                list_perso.setModel(model_perso2);
             }
         });
     }

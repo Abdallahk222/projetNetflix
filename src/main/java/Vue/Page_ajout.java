@@ -2,9 +2,12 @@ package Vue;
 
 import Controleur.ListageVideos;
 import Controleur.Mise_a_jour;
+import Modele.Client;
 import Modele.Video;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
@@ -16,8 +19,11 @@ public class Page_ajout extends JFrame {
     private JLabel titre_ajout;
     public long id_list;
 
-    public Page_ajout(long id_list){
+    public Client client0;
+
+    public Page_ajout(long id_list, Client client){
         this.id_list=id_list;
+        this.client0=client;
         setLayout(null);
 
         setContentPane(mainpanel);
@@ -27,6 +33,7 @@ public class Page_ajout extends JFrame {
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Page d'ajout");
         setVisible(true);
+
     }
 
     private void createUIComponents() {
@@ -55,6 +62,7 @@ public class Page_ajout extends JFrame {
                     Mise_a_jour maj=new Mise_a_jour();
                     maj.ajout_contientliste(id_list,video.getId_video());
                     dispose();
+                    new Interface_client(client0);
                 }
             }
         });
