@@ -13,18 +13,18 @@ public class VideoDao extends MethodDao<Video>{
     public void ajouter(Video obj) {
         try {
             PreparedStatement preparedStatement = this.connection.prepareStatement(
-                    "INSERT INTO video (titre, lien, resume, teaser, duree, annee, acteur, realisateur, Note_j, img) " +
+                    "INSERT INTO video (titre, lien, img, resume, teaser, duree, annee, acteur, realisateur, Note_j) " +
                             "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
             preparedStatement.setString(1, obj.getTitre());
             preparedStatement.setString(2, obj.getLien());
-            preparedStatement.setString(3, obj.getResume());
-            preparedStatement.setString(4, obj.getTeaser());
-            preparedStatement.setString(5, obj.getDuree());
-            preparedStatement.setString(6, obj.getAnnee());
-            preparedStatement.setString(7, obj.getActeur());
-            preparedStatement.setString(8, obj.getRealisateur());
-            preparedStatement.setInt(9, obj.getNote_j());
-            preparedStatement.setString(10, obj.getImg());
+            preparedStatement.setString(3, obj.getImg());
+            preparedStatement.setString(4, obj.getResume());
+            preparedStatement.setString(5, obj.getTeaser());
+            preparedStatement.setString(6, obj.getDuree());
+            preparedStatement.setString(7, obj.getAnnee());
+            preparedStatement.setString(8, obj.getActeur());
+            preparedStatement.setString(9, obj.getRealisateur());
+            preparedStatement.setInt(10, obj.getNote_j());
 
             preparedStatement.executeUpdate();
         }
@@ -134,4 +134,5 @@ public class VideoDao extends MethodDao<Video>{
         }
         return videoList;
     }
+
 }

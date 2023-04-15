@@ -75,4 +75,23 @@ public class Mise_a_jour {
         Liste_clientDao listeClientDao=new Liste_clientDao();
         listeClientDao.contient(id_list,id_video);
     }
+
+    public void ajoutervideo (Video video, Direction direction, long idcat){
+        VideoDao videodao= new VideoDao();
+        DirectionDao directionDao = new DirectionDao();
+        videodao.ajouter(video);
+        CategorieDao cat = new CategorieDao();
+        List<Video> l = videodao.lister();
+        video.setId_video(l.get(l.size()-1).getId_video());
+        cat.videocat(video,idcat);
+        directionDao.maj(direction, video);
+    }
+
+    public void modifiervideo(Video video, Direction direction){
+        VideoDao videodao= new VideoDao();
+        videodao.update(video);
+        List<Video> l = videodao.lister();
+        DirectionDao directionDao = new DirectionDao();
+        directionDao.maj2(direction, video);
+    }
 }

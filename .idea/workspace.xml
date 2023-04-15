@@ -4,16 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Evenement visionnage video + note">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_ajout.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_ajout.java" afterDir="false" />
+    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Page video implementé + Recherche avec filtre">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Direction_ajouter.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Direction_ajouter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Direction_modifier.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Direction_modifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Interface_direction.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Vue/Interface_direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/image/Drame3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/Liste_clientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/Liste_clientDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/CategorieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/CategorieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/Video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/Video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Connection_form.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Inscription_form.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,7 @@
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
     "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "273",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Abdallah/Desktop/ING3/Deuxième semestre/Java/TP/TP4/projetNetflix/src/main/java/Vue",
+    "last_opened_file_path": "C:/Users/talbi/IdeaProjects/projetNetflix/target/classes/image",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
@@ -73,13 +79,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\target\classes\image" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java\Vue" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\target\classes" />
       <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\target\classes" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src" />
-      <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src\main\java" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\src\main\java\image" />
       <recent name="C:\Users\talbi\IdeaProjects\projetNetflix\src" />
       <recent name="C:\Users\Abdallah\Desktop\ING3\Deuxième semestre\Java\TP\TP4\projetNetflix\src" />
     </key>

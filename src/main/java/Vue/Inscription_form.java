@@ -72,4 +72,7 @@ public class Inscription_form extends JFrame{
         setVisible(true);
     }
 
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }

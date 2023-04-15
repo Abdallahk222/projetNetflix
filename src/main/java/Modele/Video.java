@@ -23,10 +23,11 @@ public class Video {
     private int Note_j;
 
     public Video(){}
-    public Video(String titre, String lien, String resume, String teaser, String duree,
+    public Video(String titre, String lien, String img, String resume, String teaser, String duree,
                  String annee, String acteur, String realisateur, int note_j) {
         this.titre = titre;
         this.lien = lien;
+        this.img= img;
         this.resume = resume;
         this.teaser = teaser;
         this.duree = duree;

@@ -71,4 +71,19 @@ public class CategorieDao extends MethodDao<Categorie>{
         }
         return categorieList;
     }
+
+    public void videocat(Video video, long idcat){
+        try {
+            PreparedStatement preparedStatement = this.connection.prepareStatement(
+                    "INSERT INTO appartient (id_video, id_cat) " +
+                            "VALUES(?,?)");
+            preparedStatement.setLong(1, video.getId_video());
+            preparedStatement.setLong(2, idcat);
+
+            preparedStatement.executeUpdate();
+        }
+        catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
 }

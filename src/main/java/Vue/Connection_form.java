@@ -23,7 +23,10 @@ public class Connection_form extends JFrame{
     public Connection_form(){
         setLayout(null);
         setContentPane(Connection);
-        setSize(600,300);
+        //setSize(600,300);
+        this.pack();
+        this.setDefaultLookAndFeelDecorated(true);
+        this.setExtendedState(this.MAXIMIZED_BOTH);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Connection");
         setVisible(true);
