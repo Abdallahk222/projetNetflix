@@ -5,7 +5,7 @@ import Modele.*;
 import java.util.List;
 
 public class Login {
-
+    /** Methode d'inscription*/
     public void signUp(Client client){
         ClientDAO clientdao= new ClientDAO();
         clientdao.ajouter(client);
@@ -22,6 +22,7 @@ public class Login {
         listeClientDao.ajouter(list);
     }
 
+    /** Methode de connection client*/
     public boolean signIn(Client client){
         ClientDAO clientdao= new ClientDAO();
         List<Client> clientList;
@@ -38,6 +39,7 @@ public class Login {
         return false;
     }
 
+    /** Methode de connection Direction*/
     public boolean SignDirection(Direction direction)
     {
         DirectionDao directiondao =  new DirectionDao();

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Gestionnaire clients">
+    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Image Fiction2">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Interface_client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Page_ajout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_ajout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Page_video.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Vue/Page_video.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Vue/Page_video.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageClients.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/MethodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/MethodDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +42,9 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2NQ51oXbmZctn2VyaSXy6VoMMqH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

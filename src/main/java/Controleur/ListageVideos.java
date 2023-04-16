@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ListageVideos {
 
+    /** Liste de vidéo*/
 
     public List<Video> ListVideo(){
         VideoDao videodao = new VideoDao();
@@ -15,7 +16,8 @@ public class ListageVideos {
         return ListVideos;
     }
 
-    // Liste de liste de vidéo par catégorie
+    /** Liste de liste de vidéo par catégorie */
+
     public List<List<Video>> Liste_cat(){
         VideoDao videodao = new VideoDao();
         List<List<Video>> list_cat=new ArrayList<>();
@@ -27,6 +29,8 @@ public class ListageVideos {
 
         return list_cat;
     }
+
+    /** Liste de vidéo dans l'historique */
 
     public List<Visionne> historique (long id_client){
 
@@ -46,7 +50,7 @@ public class ListageVideos {
         return list_f;
     }
 
-    // fonction de recherche spécifique
+    /** Fonction de recherche spécifique */
 
     public List<Video> recherche_sp(String s, String filtre){
         List<Video> list=this.ListVideo();
@@ -71,7 +75,7 @@ public class ListageVideos {
         return list_f;
     }
 
-    // filtre de popularité (ici 2 choix : note >5 -> i=0 ; note >8 -> i=1)
+    /** Filtre de popularité (ici 2 choix : note >5 -> i=0 ; note >8 -> i=1)*/
     public List<Video> filtre(List<Video> list,int i){
         List<Video> list_f=new ArrayList<>();
         if(i==0){
@@ -90,6 +94,7 @@ public class ListageVideos {
         }
         return list_f;
     }
+    /** Liste des films préférés de l'utilisateur*/
 
     public List<Video> film_pref(Client client){
         VisionneDao visionneDao=new VisionneDao();
@@ -115,7 +120,7 @@ public class ListageVideos {
         return list_f;
     }
 
-    // Methode recherchant la liste correspondant au client
+    /** Methode recherchant la liste correspondant au client*/
     public long id_list(Client client){
         Liste_clientDao listeClientDao=new Liste_clientDao();
         List<Liste_client> list=listeClientDao.lister();
@@ -129,7 +134,7 @@ public class ListageVideos {
         }
         return id_list;
     }
-
+    /** Liste des films de la liste personnalisée de l'utilisateur*/
     public List<Video> film_perso(Client client){
         Liste_clientDao listeClientDao=new Liste_clientDao();
         List<Video> listf;

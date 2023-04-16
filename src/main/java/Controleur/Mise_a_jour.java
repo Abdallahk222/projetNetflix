@@ -8,17 +8,7 @@ import java.util.List;
 
 public class Mise_a_jour {
 
-    // Methode ajout video de la direction
-    public void ajoutervid(Direction obj1, Video obj2) {
-        VideoDao videodao = new VideoDao();
-        DirectionDao directiondao = new DirectionDao();
-        videodao.ajouter(obj2);
-        directiondao.maj(obj1, obj2);
-    }
-    //
-
-
-    // Methode ajout de Video dans Visionne ie video vue par le client
+    /** Methode ajout de Video dans Visionne à savoir la video vue par le client */
 
     public void ajoutvisionne(Client obj1, Video obj2){
         Visionne visionne=new Visionne(obj2.getId_video(), obj1.getId(), Date.valueOf(LocalDate.now()));
@@ -42,7 +32,7 @@ public class Mise_a_jour {
 
     }
 
-    // Methode note_client
+    /** Methode permettant au client d'attribuer une note*/
 
     public void note_visionne(Client obj1, Video obj2, int note_client){
         VisionneDao visionneDao=new VisionneDao();
@@ -70,12 +60,14 @@ public class Mise_a_jour {
         visionneDao.update(vis);
     }
 
-    // Ajout de video dans une liste
+    /** Ajout de video dans une liste*/
     public void ajout_contientliste(long id_list, long id_video){
         Liste_clientDao listeClientDao=new Liste_clientDao();
         listeClientDao.contient(id_list,id_video);
     }
 
+
+    /** Methode d'ajout de video par l'admin */
     public void ajoutervideo (Video video, Direction direction, long idcat){
         VideoDao videodao= new VideoDao();
         DirectionDao directionDao = new DirectionDao();
@@ -87,6 +79,8 @@ public class Mise_a_jour {
         directionDao.maj(direction, video);
     }
 
+
+    /** Methode de modification de vidéo par l'admin */
     public void modifiervideo(Video video, Direction direction){
         VideoDao videodao= new VideoDao();
         videodao.update(video);
@@ -95,6 +89,7 @@ public class Mise_a_jour {
         directionDao.maj2(direction, video);
     }
 
+    /** Methode de modification des informations clients par l'admin */
     public void modifierclient(Client client){
         ClientDAO clientdao= new ClientDAO();
         clientdao.update(client);
