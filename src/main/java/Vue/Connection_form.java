@@ -8,6 +8,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/** Classe correspondant à la Fenêtre de connection pour le client et l'admin*/
 public class Connection_form extends JFrame{
     private JPanel Connection;
     private JLabel titre;
@@ -74,8 +75,6 @@ public class Connection_form extends JFrame{
         });
     }
 
-    public static void main(String[] args) {
-        Connection_form connectionForm=new Connection_form();
-    }
+
 
 }

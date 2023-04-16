@@ -7,7 +7,7 @@ import Modele.Direction;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/** Classe correspondant à la Fenêtre de modification des informations d'une vidéo par l'admin*/
 public class Direction_modifier extends JFrame {
     private JPanel Ajout_video;
     private JLabel titrepage;

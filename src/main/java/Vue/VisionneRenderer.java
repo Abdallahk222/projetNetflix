@@ -5,7 +5,7 @@ import Modele.Visionne;
 
 import javax.swing.*;
 import java.awt.*;
-
+/** Classe permettant la personnalisation des cellules des Listes de Vidéos (Historique) (non utilisée)*/
 public class VisionneRenderer extends JPanel implements ListCellRenderer<Visionne> {
 
     private JLabel VidTitre = new JLabel();
@@ -22,7 +22,7 @@ public class VisionneRenderer extends JPanel implements ListCellRenderer<Visionn
 
     }
 
-
+    /** Methode définissant chaque cellules des Listes de Vidéos (Historique)*/
     @Override
     public Component getListCellRendererComponent(JList<? extends Visionne> list,
                                                   Visionne visionne, int index, boolean isSelected, boolean cellHasFocus) {

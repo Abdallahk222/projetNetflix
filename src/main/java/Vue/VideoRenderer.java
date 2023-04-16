@@ -8,6 +8,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
+/** Classe permettant la personnalisation des cellules des Listes de Vidéos */
 public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
     private JLabel VidImg = new JLabel();
     private JLabel VidTitre = new JLabel();
@@ -26,6 +27,7 @@ public class VideoRenderer extends JPanel implements ListCellRenderer<Video> {
         add(panelText, BorderLayout.SOUTH);
     }
 
+    /** Methode définissant chaque cellules des Listes de Vidéos */
     @Override
     public Component getListCellRendererComponent(JList<? extends Video> list,
                                                   Video video, int index, boolean isSelected, boolean cellHasFocus) {

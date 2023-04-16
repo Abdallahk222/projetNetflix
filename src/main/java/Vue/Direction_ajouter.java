@@ -7,7 +7,7 @@ import Modele.Direction;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/** Classe correspondant à la Fenêtre d'ajout d'une vidéo par l'admin*/
 public class Direction_ajouter extends JFrame{
     Video nv_video=new Video();
     private JPanel Ajout_video;
@@ -91,11 +91,5 @@ public class Direction_ajouter extends JFrame{
         });
         setVisible(true);
     }
-    public static void main(String[] args)
-    {
-        Direction direction = new Direction();
-        direction.setId_admin(1);
-        Direction_ajouter direction1 =new Direction_ajouter(direction);
 
-    }
 }

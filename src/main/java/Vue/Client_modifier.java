@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
-
+/** Classe correspondant à la Fenêtre de modification des informations d'un client par l'admin*/
 public class Client_modifier extends JFrame{
     private JPanel modifclient;
     private JLabel titre;

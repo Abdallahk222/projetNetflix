@@ -6,7 +6,7 @@ import Modele.Client;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
+/** Classe correspondant à la Fenêtre d'inscription d'un client */
 public class Inscription_form extends JFrame{
     Client nv_client=new Client();
     private JLabel titre;

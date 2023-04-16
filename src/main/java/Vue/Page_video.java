@@ -10,6 +10,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URI;
 
+/** Classe correspondant à la Fenêtre affichant les informations d'une vidéo au client */
 public class Page_video extends JFrame {
 
     private JPanel Page_video;

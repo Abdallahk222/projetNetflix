@@ -9,7 +9,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.*;
 import java.util.List;
-
+/** Classe correspondant à la Fenêtre d'Interface-Client comprenant :
+ * -Le catalogue
+ * -La recherche de vidéos
+ * -Les Listes Personnalisée du client
+ * */
 public class Interface_client extends JFrame{
     private JPanel mainpanel;
     private JTabbedPane tab;

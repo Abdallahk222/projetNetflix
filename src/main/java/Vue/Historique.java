@@ -7,7 +7,7 @@ import Modele.Visionne;
 
 import javax.swing.*;
 import java.util.List;
-
+/** Classe correspondant à la Fenêtre d'Historique du client (non utilisée)'*/
 public class Historique extends JFrame {
     private JButton boutonh;
     private JLabel titrehisto;

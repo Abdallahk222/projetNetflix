@@ -10,7 +10,10 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
-
+/** Classe correspondant à la Fenêtre d'Interface-Admin comprenant :
+ * -L'ajout et la modification de vidéo
+ * -Le Gestionnaire Client
+ * */
 public class Interface_direction extends JFrame {
     private JList<Video> list1;
     private JButton ajout;

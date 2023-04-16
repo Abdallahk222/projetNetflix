@@ -12,6 +12,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.List;
 
+/** Classe correspondant à la Page d'ajout d'une vidéo dans une liste personnalisée d'un client */
 public class Page_ajout extends JFrame {
 
     private JPanel mainpanel;
