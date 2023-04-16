@@ -49,6 +49,7 @@ public class Interface_client extends JFrame{
     private JPanel panel3;
     private JLabel titre_pref;
     private JLabel titre_perso;
+    private JButton déconnectionButton;
 
     public Client client0;
 
@@ -251,6 +252,14 @@ public class Interface_client extends JFrame{
                 dispose();
                 new Page_ajout(l.id_list(client0), client0);
 
+
+            }
+        });
+        déconnectionButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new Menu();
 
             }
         });
