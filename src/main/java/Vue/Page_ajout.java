@@ -18,6 +18,7 @@ public class Page_ajout extends JFrame {
     private JPanel mainpanel;
     private JList<Video> list_ajout;
     private JLabel titre_ajout;
+    private JButton retour;
     public long id_list;
 
     public Client client0;
@@ -35,6 +36,13 @@ public class Page_ajout extends JFrame {
         setTitle("Page d'ajout");
         setVisible(true);
 
+        retour.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+                new Interface_client(client);
+            }
+        });
     }
 
     private void createUIComponents() {
