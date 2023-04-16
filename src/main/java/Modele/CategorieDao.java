@@ -72,6 +72,8 @@ public class CategorieDao extends MethodDao<Categorie>{
         return categorieList;
     }
 
+    /** Methode d'ajout de video dans la table "appartient" */
+
     public void videocat(Video video, long idcat){
         try {
             PreparedStatement preparedStatement = this.connection.prepareStatement(

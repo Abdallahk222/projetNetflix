@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Image Fiction2">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="00ffc67b-7db7-44f2-9ddf-f754a712cd98" name="Changes" comment="Commentaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageClients.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageClients.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/ListageVideos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controleur/Mise_a_jour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/CategorieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/CategorieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/DirectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/Liste_clientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/Liste_clientDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Modele/MethodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/MethodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VideoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Modele/VisionneDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681572043186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Commentaire">
+      <created>1681640882379</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681640882379</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +199,7 @@
     <MESSAGE value="Page video implementé + Recherche avec filtre" />
     <MESSAGE value="Evenement visionnage video + note" />
     <MESSAGE value="Gestionnaire clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gestionnaire clients" />
+    <MESSAGE value="Commentaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commentaire" />
   </component>
 </project>

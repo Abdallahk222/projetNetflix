@@ -104,7 +104,7 @@ public class VideoDao extends MethodDao<Video>{
         return videoList;
     }
 
-    // Liste par catégorie
+    /** Methode de Listage de video par catégorie*/
 
     public List<Video> listcat(int id_cat){
         List<Video> videoList=new ArrayList<>();

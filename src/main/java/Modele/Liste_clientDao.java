@@ -79,6 +79,8 @@ public class Liste_clientDao extends MethodDao<Liste_client>{
         return liste_clientList;
     }
 
+    /** Methode d'ajout d'élémént dans la table contient */
+
     public void contient(long id_list, long id_video){
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
@@ -94,7 +96,7 @@ public class Liste_clientDao extends MethodDao<Liste_client>{
         }
     }
 
-    // Liste de video pour une id_list
+    /** Methode de Listage de video contenue dans une liste personnalisée*/
 
     public List<Video> contient_listvideo(long id_list){
         List<Video> videoList=new ArrayList<>();

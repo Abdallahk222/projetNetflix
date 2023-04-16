@@ -39,6 +39,7 @@ public class ListageVideos {
        return list;
     }
 
+    /** Fonction de recherche */
     public List<Video> recherche(String s){
         List<Video> list=this.ListVideo();
         List<Video> list_f=new ArrayList<>();

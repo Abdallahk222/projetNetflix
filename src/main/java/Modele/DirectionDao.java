@@ -78,6 +78,7 @@ public class DirectionDao extends MethodDao<Direction>{
         return directionList;
     }
 
+    /** Methode d'ajout d'élémént dans la table Mis_a_jour */
     public void maj(Direction obj1, Video obj2){
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(
@@ -94,6 +95,7 @@ public class DirectionDao extends MethodDao<Direction>{
         }
     }
 
+    /** Methode de mis à jour d'élémént dans la table Mis_a_jour */
     public void maj2(Direction obj1, Video obj2){
         try{
             PreparedStatement preparedStatement=this.connection.prepareStatement(

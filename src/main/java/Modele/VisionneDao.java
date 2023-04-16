@@ -87,6 +87,8 @@ public class VisionneDao extends MethodDao<Visionne>{
         return visionneList;
     }
 
+    /** Methode de Listage de Vidéo dans l'ordre décroissant de la date de Visionnage (Historique) */
+
     public List<Visionne> listh(long id_client){
         List<Visionne> visionneList=new ArrayList<>();
         try {

@@ -15,5 +15,7 @@ public abstract class MethodDao<T> {
 
     /** Methode d'ajout d'élement pour chaque table du DAO */
     public abstract void supprimer(T obj);
+
+    /** Methode de listage d'élément pour chaque table du DAO */
     public abstract List<T> lister();
 }
