@@ -1,5 +1,6 @@
 package Modele;
 
+/** Classe administrateur*/
 public class Direction {
     private long id_admin;
     private String email_ad;

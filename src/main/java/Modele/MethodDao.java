@@ -3,6 +3,7 @@ package Modele;
 import java.sql.Connection;
 import java.util.List;
 
+/** Classe abstraite pour les méthodes utilisées dans les classes DAO*/
 public abstract class MethodDao<T> {
 
 

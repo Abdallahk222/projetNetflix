@@ -1,5 +1,6 @@
 package Modele;
 
+/** Classe vidéo avec les informations de la vidéo*/
 public class Video {
     private long id_video=0;
     private String titre;

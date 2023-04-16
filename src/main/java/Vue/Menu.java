@@ -40,3 +40,4 @@ public class Menu extends JFrame{
         Menu menu=new Menu();
     }
 }
+

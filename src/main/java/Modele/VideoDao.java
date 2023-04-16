@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/** DAO pour vidéo*/
 public class VideoDao extends MethodDao<Video>{
 
 

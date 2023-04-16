@@ -1,5 +1,6 @@
 package Modele;
 
+/** Classe client avec ses informations*/
 public class Client {
     private long id=0;
     private String nom_client;

@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/** DAO pour la liste du client*/
 public class Liste_clientDao extends MethodDao<Liste_client>{
 
     @Override

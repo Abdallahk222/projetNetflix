@@ -6,6 +6,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+/** DAO pour client*/
 public class ClientDAO extends MethodDao<Client>{
     @Override
     public void ajouter(Client obj) {

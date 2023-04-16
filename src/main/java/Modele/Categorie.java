@@ -1,5 +1,6 @@
 package Modele;
 
+/** Classe catégorie de la vidéo*/
 public class Categorie {
     private long id_cat;
     private String nom_cat;

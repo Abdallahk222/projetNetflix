@@ -4,6 +4,7 @@ import Modele.*;
 
 import java.util.List;
 
+/** Classe Login, permet l'inscription et la connxeion du client et de l'admin*/
 public class Login {
     /** Methode d'inscription*/
     public void signUp(Client client){

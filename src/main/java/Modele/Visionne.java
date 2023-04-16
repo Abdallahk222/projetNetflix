@@ -2,6 +2,7 @@ package Modele;
 
 import java.sql.Date;
 
+/** Classe visionne pour avoir les infos de visionnage du client*/
 public class Visionne {
     private long id_video;
     private long id_client;

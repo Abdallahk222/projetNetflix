@@ -1,5 +1,7 @@
 package Modele;
 
+/** La liste du client*/
+
 public class Liste_client {
     private long id_list;
     private String nom_list;

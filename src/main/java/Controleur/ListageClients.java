@@ -6,6 +6,7 @@ import Modele.ClientDAO;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Classe listage de clients*/
 public class ListageClients {
     /** Liste de client */
     public List<Client> ListClients(){

@@ -4,6 +4,7 @@ import Modele.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Classe Listage de vidéos*/
 public class ListageVideos {
 
     /** Liste de vidéo*/

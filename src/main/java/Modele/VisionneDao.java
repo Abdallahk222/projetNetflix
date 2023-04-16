@@ -6,6 +6,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/** DAO pour Visionne*/
 public class VisionneDao extends MethodDao<Visionne>{
 
 

@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+/** Classe mise à jour : permet à l'admin d'ajouter et de modifier des vidéos et les informations des clients
+ * et au client d'attribuer une note, d'ajouter la vidéo vue par le client dans la classe visionne et d'ajouter une vidéo dans une liste*/
 public class Mise_a_jour {
 
     /** Methode ajout de Video dans Visionne à savoir la video vue par le client */
