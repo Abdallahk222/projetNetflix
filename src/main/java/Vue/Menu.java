@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/** Classe correspondant à la fenêtre du menu*/
 public class Menu extends JFrame{
     private JPanel Menu;
     private JLabel titre;
